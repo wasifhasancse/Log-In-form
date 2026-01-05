@@ -12,10 +12,10 @@
     rel="stylesheet">
 
   <!-- css styles import -->
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="responsive.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/responsive.css">
   <!-- document title -->
-  <title>Sign In</title>
+  <title>Sign Up</title>
 </head>
 
 <body>
@@ -24,15 +24,19 @@
 
       <!-- signin container -->
       <div class="login-container">
-        <h2>Fogotten Password</h2>
-        <form action="/signin" method="POST">
+        <h2>Sign Up</h2>
+        <form action="/signup" method="POST">
 
           <!-- input section  -->
           <div class="form-group">
-            <input type="text" id="username" name="username" placeholder="Enter Your Email" required>
+            <input type="text" id="username" name="username" placeholder="First Name" required>
+            <input type="text" id="username" name="username" placeholder="Last Name" required>
           </div>
           <div class="form-group">
-            <input type="password" id="password" name="password" placeholder="Enter The OTP" required>
+            <input type="email" id="email" name="email" placeholder="Enter Your Email" required>
+          </div>
+          <div class="form-group">
+            <input type="password" id="password" name="password" placeholder="Create Your Password" required>
           </div>
 
           <!-- checkbox and actions -->
@@ -41,8 +45,8 @@
             <label for="remember">Remember Me</label>
           </div>
           <div class="form-actions">
-            <button type="submit" class="signin-btn">Reset Password</button>
-            <a href="#">Don't get OTP / Resend OTP</a>
+            <button type="submit" class="signin-btn">Sign Up</button>
+            <a href="#">Passwords should be at least eight (8) characters</a>
           </div>
         </form>
       </div>
@@ -56,8 +60,8 @@
 
         <!-- signup action -->
         <div class="signup-action">
-          <p>Create a new account?</p>
-          <a href="signup.html"><button class="signup-btn" type="button">Sign Up</button></a>
+          <p>Already have an account?</p>
+          <a href="../index.html"><button class="signup-btn" type="button">Sign In</button></a>
         </div>
       </div>
     </div>
