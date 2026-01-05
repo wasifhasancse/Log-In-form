@@ -1,11 +1,11 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
 }
 
-body{
+body {
   font-family: Arial, sans-serif;
   background-color: #f0f2f5;
   display: flex;
@@ -30,26 +30,25 @@ body{
 /* login container styles */
 .login-container {
   width: 100%;
-  padding: 30px 0px; 
+  padding: 50px 40px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: stretch;
   gap: 20px;
 }
 
 .login-container h2 {
-  color: #9980FA;
+  color: #9980fa;
   font-weight: 600;
   font-size: 22px;
 }
 
 .form-group {
-  width: 100%;
   text-align: left;
   margin-bottom: 20px;
 }
 
-.form-group input{
+.form-group input {
   width: 100%;
   font-size: 18px;
   padding: 10px 15px;
@@ -61,32 +60,28 @@ body{
   color: #ccc;
 }
 
-.form-group input:hover{
+.form-group input:hover {
   border-bottom: 3px solid #b39ddb;
   color: #b39ddb;
 }
-  
+
 .form-group input:focus {
-  border-bottom: 3px solid #9980FA;
   outline: none;
 }
 
 .form-checkbox-group {
-  width: 100%;
   display: flex;
   gap: 5px;
   align-items: center;
   margin-bottom: 20px;
   font-size: 16px;
-
 }
 .form-checkbox-group input {
   height: 16px;
   width: 16px;
 }
 
-.form-actions {
-  width: 100%;
+.form-actions, .welcome-text, .signup-action {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -94,20 +89,20 @@ body{
 }
 
 .form-actions a {
-  color: #9980FA;
+  color: #9980fa;
   text-decoration: none;
   font-size: 16px;
 }
 
 .form-actions a:hover {
   text-decoration: underline;
-  color:#7d5de8;
+  color: #7d5de8;
 }
 
 .signin-btn {
   width: 100%;
   padding: 10px 0;
-  background-color: #9980FA;
+  background-color: #9980fa;
   color: white;
   border: none;
   border-radius: 4px;
@@ -119,23 +114,16 @@ body{
   background-color: #7d5de8;
 }
 
-
 /* signup container styles */
 .signup-container {
   width: 100%;
-  padding: 55px 30px;
+  padding: 50px 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 50px;
-  background: #5758BB;
+  background: #5758bb;
   color: white;
-}
-
-.welcome-text {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
 }
 
 .welcome-text h2 {
@@ -143,21 +131,9 @@ body{
   font-weight: 600;
 }
 
-.welcome-text p {
+.welcome-text p, .signup-action p{
   font-size: 18px;
 }
-
-.signup-action {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  align-items: center;
-}
-
-.signup-action p {
-  font-size: 18px;
-}
-
 
 .signup-btn {
   padding: 10px 30px;
@@ -171,5 +147,5 @@ body{
 
 .signup-btn:hover {
   background-color: white;
-  color: #5758BB;
+  color: #5758bb;
 }
